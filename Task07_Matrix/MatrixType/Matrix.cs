@@ -72,7 +72,7 @@ namespace MatrixType
             for (int i = 0; i < a.M; i++)
                 for (int j = 0; j < b.M; j++)
                     for (int k = 0; k < b.N; k++)
-                        res[i, j] += a[i, k] + b[k, j];
+                        res[i, j] += a[i, k] * b[k, j];
 
             return res;
         }
